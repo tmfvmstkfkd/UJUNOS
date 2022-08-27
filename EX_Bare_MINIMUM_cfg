@@ -89,7 +89,7 @@ set system syslog host 10.3.1.72 any any
 set system syslog host 10.3.1.150 any any
 set system syslog host 10.3.1.150 interactive-commands any
 set system syslog host 10.3.1.150 port 514
-set system syslog host 10.3.1.150 source-address 10.3.1.15
+set system syslog host 10.3.1.150 source-address 10.3.1.13
 set system syslog file messages any notice
 set system syslog file messages authorization info
 set system syslog file interactive-commands interactive-commands any
@@ -101,9 +101,8 @@ set chassis alarm management-ethernet link-down ignore
 set interfaces ge-0/0/23 description "Uplink to Firewall-ge-6/0/5"
 set interfaces ge-0/0/23 unit 0 family ethernet-switching interface-mode trunk
 set interfaces ge-0/0/23 unit 0 family ethernet-switching vlan members management
-set interfaces ge-0/0/23 unit 0 family ethernet-switching vlan members MEDUIT
-set interfaces irb unit 42 family inet address 10.3.1.15/24
-set interfaces lo0 unit 0 family inet address 10.3.0.15/24
+set interfaces irb unit 42 family inet address 10.3.1.13/24
+set interfaces lo0 unit 0 family inet address 10.3.0.13/24
 set snmp interface irb.42
 
 
